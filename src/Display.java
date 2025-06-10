@@ -19,7 +19,8 @@ public class Display
         running = true;
         frame.setVisible(true);
 
-
+        Screen.toyhouse.RotateMeshY(maths.DegToRad(140.0));
+        Screen.toyhouse.RotateMeshX(maths.DegToRad(20.0));
         while(running)
         {
             //wait 0.01 seconds
@@ -31,7 +32,6 @@ public class Display
             {
                 e.printStackTrace();
             }
-            Screen.toyhouse.RotateMeshY(maths.DegToRad(-1.0));
             Screen.toyhouse.update();
             screen.repaint();
         }

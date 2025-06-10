@@ -17,8 +17,8 @@ public class Screen extends JPanel
     static Double[][] zBuffer = new Double[Display.WIDTH][Display.HEIGHT];
     public Screen()
     {
-        toyhouse = new MeshInstance("src/../obj/Suzanne.obj");
-        cube = new CubeMesh(0.0);
+        toyhouse = new MeshInstance("src/../obj/toyhouse.obj");
+        //cube = new CubeMesh(0.0);
 
         for(int i = 0; i < Display.WIDTH; i++)
         {
